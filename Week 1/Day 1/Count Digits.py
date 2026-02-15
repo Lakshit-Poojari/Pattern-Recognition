@@ -1,3 +1,2 @@
 # Count Digits
 
-print("hello")
