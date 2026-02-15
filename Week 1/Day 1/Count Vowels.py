@@ -2,13 +2,16 @@
 
 word = str(input("Enter a word "))
 
-vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
-
+vowels = ["A", "E", "I", "O", "U"]
 count = 0
-for i in word:
+for i in word.upper():
     if i in vowels:
-        count += 1
-        print(i)
-    # else:
+        count +=1
 
-print("Number of vowels are", count)
+print(f"Number of vowels is", count)
+
+consonant = len(word) - count 
+
+print(f"number of consonant", consonant)
+
+
