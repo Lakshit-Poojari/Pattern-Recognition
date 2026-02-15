@@ -1,9 +1,9 @@
 # Count Digits
 
-num = str(int(input("Enter Number ")))
+num = str(input("Enter a number "))
 
-count=0
+count = 0
 for i in num:
-    count += 1
+    count+=1
 
-print(f"number of digits",count)
+print(f"Number of Digit is ", count)
