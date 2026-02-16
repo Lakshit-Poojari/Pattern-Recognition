@@ -1,7 +1,6 @@
 # Increasing array
 
 arr= []
-
 num_ele = int(input("Enter Number of Element "))
 
 count = 1
