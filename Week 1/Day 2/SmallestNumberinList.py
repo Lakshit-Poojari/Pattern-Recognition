@@ -1,13 +1,13 @@
 # Largest Number in List
 
-arr =[]
+arr = []
 num = int(input("Enter number of Element:- "))
 
 count = 1
 for i in range(num):
     value = int(input(f"Enter Element number {count} :- "))
     arr.append(value)
-    count+=1
+    count += 1
 
 print(arr)
 
