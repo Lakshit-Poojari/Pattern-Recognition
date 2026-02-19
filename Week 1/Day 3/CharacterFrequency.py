@@ -1,16 +1,14 @@
 # Character Frequency
 
 word = str(input("Enter a Word "))
-character = list(word)
-unique_char = set(character)
-print(character)
-print(unique_char)
 
-count = 1
-for a in unique_char:
-    for i in range(0, len(character)):
-        if a == character[i]:
+dict ={}
 
-            count+=1
+for i in word:
+    if i in dict:
+        dict[i] +=1
 
-print(unique_char,count)
+    else:
+        dict[i] = 1
+
+print(dict)
