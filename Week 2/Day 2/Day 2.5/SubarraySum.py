@@ -13,6 +13,6 @@ for num in nums:
     if current_sum -k in prefix_count:
         count += prefix_count[current_sum -k]
 
-    prefix_count[current_sum] = prefix_count.get(current_sum -k, 0) +1
+    prefix_count[current_sum] = prefix_count.get(current_sum, 0) +1
 
 print(count)
