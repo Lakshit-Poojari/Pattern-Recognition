@@ -1,12 +1,11 @@
 # Subarray Sum = K
-# SubarraySum
 
-nums = [1,8,6,2,5,4,8,3,7]
-k =4
+nums = [1,8,6,2,5,8,3,7]
+k =3
 
-prefix_count = {0:1}
 count = 0
 current_sum = 0
+prefix_count = {0:1}
 
 for num in nums:
     current_sum += num
@@ -14,6 +13,6 @@ for num in nums:
     if current_sum -k in prefix_count:
         count += prefix_count[current_sum -k]
 
-    prefix_count[current_sum] = prefix_count.get(current_sum, 0) +1
+    prefix_count[current_sum -k] = prefix_count.get(current_sum,0) +1
 
 print(count)
