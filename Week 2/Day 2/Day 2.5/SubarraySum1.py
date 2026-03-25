@@ -1,7 +1,7 @@
 # Subarray Sum = K
 
-nums = [1,8,6,2,5,8,3,7]
-k =3
+nums = [1,2,3]
+k = 3
 
 count = 0
 current_sum = 0
@@ -13,6 +13,6 @@ for num in nums:
     if current_sum -k in prefix_count:
         count += prefix_count[current_sum -k]
 
-    prefix_count[current_sum -k] = prefix_count.get(current_sum,0) +1
+    prefix_count[current_sum] = prefix_count.get(current_sum,0) +1
 
 print(count)
