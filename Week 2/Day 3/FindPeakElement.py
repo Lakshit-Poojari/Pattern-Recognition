@@ -1,6 +1,6 @@
 # Find Peak Element
 
-nums = [1, 2, 3, 1]
+nums = [1,2,9,3,4,5,6,7,8,1]
 left = 0
 right = len(nums) -1
 
