@@ -12,6 +12,6 @@ while left <= right:
         print("Position is of target is", mid)
         break
     elif nums[mid] < target:
-        left =target
+        left =target-1
     elif nums[mid] > target:
-        right = target
+        right = target-1

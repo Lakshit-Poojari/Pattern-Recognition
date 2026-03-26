@@ -6,7 +6,7 @@ left = 0
 right = len(nums) -1
 found = False
 
-while left < right:
+while left <= right:
     mid = (left + right)//2
 
     if nums[mid] == target:
