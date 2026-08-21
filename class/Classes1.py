@@ -1,5 +1,9 @@
 class Account:
 
+    @staticmethod
+    def welcome():
+        print("Welcome to bank")
+
     def __init__(self, name, balance):
         self.name = name
         self.balance = balance
@@ -20,7 +24,11 @@ class Account:
     def bal(self):
         return self.balance
 
+Account.welcome()
+
 a1 = Account("Lakshit", 5000)
+
 a1.credit(500)
 a1.debit(6000)
-a1.bal()
+
+print(a1.bal())
