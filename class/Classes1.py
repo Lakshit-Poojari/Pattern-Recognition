@@ -17,6 +17,10 @@ class Account:
         print("Amount", amount, "Credited to your account")
         print("Balance is", self.balance)
 
+    def bal(self):
+        return self.balance
+
 a1 = Account("Lakshit", 5000)
 a1.credit(500)
 a1.debit(6000)
+a1.bal()
